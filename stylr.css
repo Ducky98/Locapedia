@@ -1,0 +1,330 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #F5F5F5;
+    box-sizing: border-box;
+    height: 100vh;
+}
+
+/* *******************navigation bar *****************/
+.header {
+    user-select: none; /* Navigation bar dont need to be selected*/
+    width: 100%;
+    display: flex;
+    background-color: #363062;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem;
+    box-sizing: border-box;
+
+}
+
+.logo {
+    font-size: 15pt;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #F99417;
+    font-weight: bolder;
+}
+
+.navbar a {
+    font-size: 15pt;
+    margin-left: 2rem;
+    text-decoration: none;
+    color: #F99417;
+    font-weight: bolder;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.navbar a:hover{
+    color: #F5F5F5;
+    text-decoration: underline;
+    transition: 0.5s;
+}
+
+/* ######################################################Home page############################################3 */
+/************************ city info ***************************/
+.info {
+    /* background-color: red; */
+    width: 80%;
+    padding: 10px 20px;
+    line-height: 40px;
+    margin: auto;
+    box-shadow: -2px -2px 50px rgb(181, 197, 199);
+    margin-top: 90px;
+    background-color: #f7fafc;
+}
+
+p {
+    line-height: normal;
+    margin: 20px 0;
+    text-align: justify;
+}
+
+.rapp {
+    margin: 30px 0;
+    white-space: nowrap;
+    display: flex;
+    justify-content: center;
+
+
+}
+
+.rapp img {
+    height: 220px;
+    padding: 20px;
+    box-shadow: 5px 5px 10px;
+    margin: 0 10px;
+}
+.rapp img:hover{
+    transform:scale(1.1);
+    transition: 0.5s;
+    
+}
+iframe {
+    width: 100%;
+    height: 300px;
+}
+
+/*############################################## about us page #######################################*/
+.about h1{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    margin: 20px auto;
+}
+.about h1::after{
+    content: " ";
+    position: absolute;
+    width: 10%;
+    bottom: 0;
+    height: 3px;
+    display: block;
+    margin: 0 auto;
+    background-color: #363062;
+}
+.read{
+    text-decoration: none;
+}
+.read:hover{
+    text-decoration: underline;
+    font-weight: bolder;
+    font-size: 1.1rem;
+}
+/*################################# Climate##################################*/
+.zap{
+    width: 60%;
+    margin: auto;
+    box-shadow: -2px -2px 50px rgb(181, 197, 199);
+    margin-top: 90px;
+    background-color: #f7fafc;
+}
+.wrapper{
+    
+    /* padding: 10px 20px; */
+    /* line-height: 40px; */
+    
+    display: flex;
+    justify-content: space-between;
+}
+.leftsec{
+    /* background-color: red; */
+    
+    width: 30%;
+    display: inline-block;
+}
+.rightsec{
+    /* background-color: rgb(229, 253, 254); */
+    width: 60%;
+    display: inline-block;
+}
+.leftsec img{
+    padding: 30px 20px;
+}
+.card{
+    width: 80%;
+    background-color: #f7fafc;
+    margin: auto;
+}
+.card img{
+    width: 300px;
+    margin: auto;
+    align-items: center;
+    /* justify-content: center; */
+    display: block;
+}
+.temp{
+    font-family: Google Sans,arial,sans-serif;
+    font-size: 60px;
+    font-weight: 900;
+    text-align: center;
+}
+.tempsub{
+    font-family: Google Sans,arial,sans-serif;
+    font-size: 30px;
+    /* font-weight: 900; */
+    text-align: center;
+}
+.weatherbox{
+    display: inline-block;
+}
+.table{
+    margin: auto;
+    padding-bottom: 10px;
+    box-shadow: -1px -1px 5px rgb(91, 100, 101);
+}
+.table, .table th,.table td {
+    border: 2px solid white;
+    border-collapse: collapse;
+    font-size: larger;
+    font-weight: bold;
+    text-align: center;
+    padding: 8px;
+}
+.table th{
+    background-color: #190482;
+    color: #F5F5F5;
+}
+.table  td{
+    font-size: large;
+}
+.table tr:nth-child(even){
+    background-color: #e2e2f5;
+}
+.table tr:nth-child(even):hover{
+    transform: scale(1.01);
+    background-color: #7752FE;
+}
+/* .table tr:nth-child(odd){
+    background-color: #e2e2f5;
+} */
+.table tr:nth-child(odd):hover{
+    transform: scale(1.01);
+    background-color: #7752FE;
+    transition: 200ms;
+}
+/* ######################################### Contact Us############################################### */
+#contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    border: 2px solid rgb(91, 91, 104);
+    width: 100%;
+    max-width: 650px;
+    margin: 50px 0px;
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: -1px -1px 5px rgb(91, 100, 101);
+}
+.user-form{
+    /* display: flex;
+    flex-wrap: wrap; */
+    justify-content: space-between;
+    padding: 20px 0px;
+}
+.form-inputbox:nth-child(2n){
+    justify-content: end;
+}
+.form-inputbox{
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 15px;
+    width: 100%;
+}
+.address{
+    display: flex;
+    flex-wrap: wrap;
+}
+.form-inputbox label{
+    width: 95%;
+    color: black;
+    font-size: 20px;
+    font-weight: 400;
+    margin: 5px 10px;
+}
+.form-inputbox input{
+    height: 40px;
+    width: 95%;
+    border-radius: 7px;
+    outline: none;
+    border: 1px solid grey;
+    margin: 0 10px;
+    padding: 0 10px;
+}
+.phone-container{
+    display: flex;
+    width: 100%;
+    /* flex-wrap: wrap; */
+}
+.phone-container select{
+    margin: 0 10px;
+    width: 90px;
+    height: 40px;
+    border-radius: 7px;
+    outline: none;
+    border: 1px solid grey;
+    /* padding: 0 10px; */
+    margin-right: 0;
+}
+.phone-container input{
+    width: calc(93% - 90px);
+    margin-left: 0%;
+}
+.addr{
+    width: 50%;
+}
+.gender-title{
+    color:black;
+    font-size: 20px;
+    font-weight: 400;
+    margin: 5px 10px;
+}
+
+.gender-category{
+    margin: 15px 0;
+    color: black;
+    margin: 5px 10px;
+}
+
+.gender-category label{
+    padding: 0 20px 0 5px;
+}
+
+.gender-category label,
+.gender-category input,
+.form-submit-btn input{
+    cursor: pointer;
+}
+.form-submit-btn{
+    margin-top: 40px;
+}
+
+.form-submit-btn input{
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+    font-size: 20px;
+    padding: 10px;
+    border:none;
+    border-radius: 3px;
+    color: rgb(209, 209, 209);
+    background: #363062;
+}
+
+.form-submit-btn input:hover{
+    background: #c1bbee;
+    color: #363062;
+}
+.form-inputbox input:focus, .phone-container select:hover{
+    border-color: #363062;
+    background-color: #c1bbee;
+    /* border-width: 2px; */
+    
+}
+.form-inputbox input:focus::-webkit-input-placeholder {
+    color: #ffffff;
+}

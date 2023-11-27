@@ -1,0 +1,9 @@
+Assignment 1: HTML Problem Statement
+
+> The project involves creating a website with four primary links: Home, About, Contact, and Climate. Each link directs users to its respective page upon clicking.
+
+> The Home page comprises a heading, a city description, and a collection of city images arranged using flex attributes instead of table tags for better organization.
+
+> Additionally, the Home page incorporates an iframe element.
+
+> However, the current implementation lacks responsiveness.
